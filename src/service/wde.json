@@ -1,7 +1,4 @@
-export const CustomerService = {
-    getData() {
-        return [
-            {
+ {
                 id: 1013,
                 name: 'Graciela Ruta',
                 country: {
@@ -14,12 +11,12 @@ export const CustomerService = {
                 verified: false,
                 activity: 59,
                 representative: {
-                    name: 'Amy Elsnerrrr',
+                    name: 'Amy Elsner',
                     image: 'amyelsner.png'
                 },
                 balance: 45250
             },
-            {
+              {
                 id: 1027,
                 name: 'Ezekiel Chui',
                 country: {
@@ -32,13 +29,13 @@ export const CustomerService = {
                 verified: false,
                 activity: 76,
                 representative: {
-                    name: 'Amy Elsnerrrr',
+                    name: 'Amy Elsner',
                     image: 'amyelsner.png'
                 },
                 balance: 60454
             },
-
-            {
+            
+  {
                 id: 1036,
                 name: 'Jose Stockham',
                 country: {
@@ -51,12 +48,11 @@ export const CustomerService = {
                 verified: true,
                 activity: 77,
                 representative: {
-                    name: 'Amy Elsnerrrr',
+                    name: 'Amy Elsner',
                     image: 'amyelsner.png'
                 },
                 balance: 94909
-            },
-            {
+            },{
                 id: 1037,
                 name: 'Rozella Ostrosky',
                 country: {
@@ -69,12 +65,11 @@ export const CustomerService = {
                 verified: true,
                 activity: 66,
                 representative: {
-                    name: 'Amy Elsnerrrr',
+                    name: 'Amy Elsner',
                     image: 'amyelsner.png'
                 },
                 balance: 57245
-            },
-            {
+            },{
                 id: 1041,
                 name: 'Dyan Oldroyd',
                 country: {
@@ -87,12 +82,12 @@ export const CustomerService = {
                 verified: false,
                 activity: 5,
                 representative: {
-                    name: 'Amy Elsnerrrr',
+                    name: 'Amy Elsner',
                     image: 'amyelsner.png'
                 },
                 balance: 50194
             },
-            {
+             {
                 id: 1044,
                 name: 'Erick Ferencz',
                 country: {
@@ -105,37 +100,32 @@ export const CustomerService = {
                 verified: true,
                 activity: 54,
                 representative: {
-                    name: 'Amy Elsnerrrr',
+                    name: 'Amy Elsner',
                     image: 'amyelsner.png'
                 },
                 balance: 30790
-            }
-        ];
-    },
+            },
 
-    getCustomersSmall() {
-        return Promise.resolve(this.getData().slice(0, 10));
-    },
 
-    getCustomersMedium() {
-        return Promise.resolve(this.getData().slice(0, 50));
-    },
 
-    getCustomersLarge() {
-        return Promise.resolve(this.getData().slice(0, 200));
-    },
 
-    getCustomersXLarge() {
-        return Promise.resolve(this.getData());
-    },
 
-    getCustomers(params) {
-        const queryParams = params
-            ? Object.keys(params)
-                  .map((k) => encodeURIComponent(k) + '=' + encodeURIComponent(params[k]))
-                  .join('&')
-            : '';
 
-        return fetch('https://www.primefaces.org/data/customers?' + queryParams).then((res) => res.json());
-    }
-};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
